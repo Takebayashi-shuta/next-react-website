@@ -1,9 +1,11 @@
 import Link from "next/link"
+import styles from "styles/nav.module.css"
+
 
 export default function Nav() {
     return (
         <nav>
-            <ul>
+            <ul className={styles.list}>
                 <li>
                     <Link href="/">
                         Home
@@ -16,7 +18,7 @@ export default function Nav() {
                 </li>
                 <li>
                     <Link href="/blog">
-                       Blog
+                        Blog
                     </Link>
                 </li>
             </ul>
